@@ -15,7 +15,7 @@ const db = knex({
   client: 'pg',
   connection: {
     host : 'postgresql-metric-66059',
-    user : 'rubi',
+    user : 'rubinstein.elad@gmail.com',
     password : '',
     database : 'smart-brain'
   }
@@ -39,7 +39,7 @@ app.post('/imageurl', (req, res) => { image.handleApiCall(req, res)})
 
 
 app.listen(process.env.PORT || 3000, () => {
-	console.log(`running on ${process.env.PORT}`)
+	console.log(`running on port ${process.env.PORT}`)
 })
 
 /*
