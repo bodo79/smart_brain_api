@@ -21,10 +21,6 @@ const db = knex({
   }
 });
 
-// postgres.select('*').§from('users').then(data => {
-// 	console.log(data);
-// })
-
 const app = express();
 
 app.use(express.json());
